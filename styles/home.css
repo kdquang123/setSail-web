@@ -1,0 +1,272 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color:  #1c1c1c;
+    height: 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+header div ul li{
+   margin: 0 -4px;
+}
+
+header div ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+header .left-header ul li{
+    display: inline-block;
+    line-height: 40px;
+    padding: 0px 8px;
+}
+
+header .left-header ul li:hover a{
+    color: #3fd0d4;
+}
+
+header .left-header ul li a{
+    color: white;
+}
+header .left-header ul li a i{
+    color: #3fd0d4;
+    font-size: 16px;
+    margin: 0px 10px;
+}
+
+header .right-header ul li{
+    display: inline-block;
+    line-height: 40px;
+}
+
+header .right-header ul li:nth-child(1){
+    margin-right: 8px;
+}
+
+
+header .right-header ul li a{
+    color: white;
+    font-size: 15px;
+    padding: 0px 5px;
+}
+
+header .right-header ul li:nth-child(3) a{
+    padding: 0;
+}
+
+header .right-header #user{
+    background-color: #3fd0d4;
+    color: white;
+    width: 50px;
+    text-align: center;
+}
+
+header .right-header #user i{
+    font-size: 25px;
+}
+
+header .right-header #language{
+    background-color:#34a6aa;
+    color: white;
+    width: 150px;
+    text-align: center;
+    position: relative;
+}
+
+header .right-header #language ul{
+    position: absolute;
+    top:40px;
+    left: 0px;
+    width: 100%;
+    background-color: #3fd0d4;
+    height: 0px;
+    transition: height 200ms linear;
+    overflow: hidden;
+}
+
+header .right-header #language:hover ul{
+  height: 120px;
+}
+
+header .right-header #language ul li{
+    display: block;
+    color: #fff;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+nav .nav-header{
+   display: inline-block;
+}
+
+nav .nav-header img{
+    width: 150px;
+}
+
+nav ul{
+    display: inline-block;
+}
+
+nav ul li{
+   padding: 5px 20px;
+   display: inline-block;
+}
+
+nav ul li a{
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+nav ul li a:hover{
+    color: #3fd0d4;
+    border-bottom:2px solid #3fd0d4 ;
+}
+
+
+nav .nav-end ul li{
+    font-size: 20px;
+}
+
+nav .nav-end ul li{
+    padding: 0px 8px;
+}
+
+main .slide{
+    position: relative;
+    z-index: -1;
+}
+
+main .slide .slideShow{
+   height: 450px;
+   background-image: url('https://luumanhcuong.github.io/travel/assets/img/%E1%BA%A3nh%2012.jpg');
+   background-size: cover;
+}
+
+.slide .slide-text{
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    animation:slideText 1500ms 1 linear ;
+}
+
+@keyframes slideText{
+    from{
+        top: 150px;
+        opacity: 0;
+    }
+    to{
+        top: 70px;
+        opacity: 1;
+    }
+}
+
+.slide .slide-text h4{
+    font-family: 'Dancing Script', cursive;
+}
+
+.slide .slide-btn{
+    display: flex;
+    justify-content: space-between;
+    color:#3fd0d4;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 180px;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.slide .btn-next,.slide .btn-prev{
+   display: inline-block;
+   background-color: rgba(255, 255, 255, 0.7);
+   height: 60px;
+   width: 60px;
+   border-radius: 50%;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+   cursor: pointer;
+}
+
+
+
+.slide .btn-next:hover,.slide .btn-prev:hover{
+    background-color: #3fd0d4;
+    color: #fff;
+}
+
+.slide .form{
+    position: absolute;
+    top: 410px;
+    width: 100%;
+}
+
+.slide form{
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+
+.slide form .form-group{
+    border-right: 0.3px solid #ccc;
+    height: 80px;
+    flex: 5;
+    font-size: 20px;
+    display: flex;
+}
+
+.slide form .form-group label{
+    display: inline-block;
+    flex: 2;
+    height: 100%;
+    line-height: 80px;
+    text-align: center;
+    background-color: white;
+    color: #ccc;
+}
+
+.slide form .form-group input,select{
+    border: none;
+    height: 100%;
+    font-weight: bold;
+    flex: 8;
+    outline: none;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.slide form .form-group:nth-child(4){
+    flex: 3;
+    border: none;
+}
+
+.slide form .form-group:nth-child(4) input{
+    background-color: #3fd0d4;
+    color: white;
+}
+
+
+.slide form .form-group:nth-child(4) input:hover{
+    background-color: #34a6aa;
+}

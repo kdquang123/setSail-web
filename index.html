@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SetSail</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@200&display=swap');
+    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/home.css">
@@ -13,18 +16,105 @@
     <header>
        <div class="left-header">
         <ul>
-            <li><i class="fa-regular fa-envelope"></i></li>
-            <li></li>
-            <li></li>
+            <li><a href=""><i class="fa-regular fa-envelope"></i>setsail@qode.com</a></li>
+            <li><a href=""><i class="fa-solid fa-phone"></i>1 562 867 5309</a></li>
+            <li><a href=""><i class="fa-solid fa-location-dot"></i>Broadway &amp; Morris St, New York</a></li>
         </ul>
        </div>
-       <div class="right-header"></div>
+       <div class="right-header">
+        <ul>
+            <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li id="language">
+                English<i class="fa-solid fa-chevron-down"></i>
+                <ul>
+                    <li>French</li>
+                    <li>German</li>
+                    <li>Italian</li>
+                </ul>
+            </li>
+            <li id="user"><a href="#"><i class="fa-solid fa-circle-user"></i></a></li>
+        </ul>
+       </div>
     </header>
     <nav>
-
+        <div class="nav-header"><img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo.png" alt=""></div>
+        <ul>
+            <li><a href="">Homes</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Destinations</a></li>
+            <li><a href="">Tours</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Elements</a></li>
+        </ul>
+        <div class="nav-end">
+            <ul>
+                <li><i class="fa-solid fa-bag-shopping"></i></li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><i class="fa-solid fa-bars"></i></li>
+            </ul>
+        </div>
     </nav>
     <main>
-        <section></section>
+        <section class="slide">
+            <div class="slideShow">
+            </div>
+            <div class="slide-text">
+                <h4>Let go now</h4>
+                <h2>Explore and travel.</h2>
+            </div>
+            <div class="slide-btn">
+                <div class="btn-prev"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="btn-next"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="form">
+                <form>
+                    <div class="form-group">
+                        <label for=""><i class="fa-regular fa-compass"></i></label>
+                        <input type="text" placeholder="Where to ?">
+                    </div>
+                    <div class="form-group">
+                      <label for=""><i class="fa-solid fa-calendar-days"></i></label>
+                     <select>
+                         <option value="">Month</option>
+                         <option value="">January</option>
+                         <option value="">February</option>
+                         <option value="">March</option>
+                         <option value="">April</option>
+                         <option value="">May</option>
+                         <option value="">June</option>
+                         <option value="">July</option>
+                         <option value="">August</option>
+                         <option value="">Septemper</option>
+                         <option value="">Octoper</option>
+                         <option value="">November</option>
+                         <option value="">December</option>
+                     </select>
+                    </div>
+                    <div class="form-group">
+                     <label for=""><i class="fa-solid fa-thumbtack"></i></label>
+                     <select>
+                         <option value="">Travel type</option>
+                         <option value="">Europe</option>
+                         <option value="">Lastest</option>
+                         <option value="">NY</option>
+                         <option value="">Popular</option>
+                         <option value="">Skiing</option>
+                         <option value="">Trendy</option>
+                         <option value="">Wines</option>
+                     </select>
+                    </div>
+                    <div class="form-group"><input type="submit" value="FIND NOW"></div>
+                 </form>
+            </div>
+            
+
+        </section>
     </main>
     <footer>
 
