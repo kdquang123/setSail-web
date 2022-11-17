@@ -1,3 +1,7 @@
+html{
+    font-weight:bold;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -6,7 +10,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index:3;
 }
 
 header div ul li{
@@ -41,6 +45,7 @@ header .left-header ul li a i{
 header .right-header ul li{
     display: inline-block;
     line-height: 40px;
+    z-index: 5;
 }
 
 header .right-header ul li:nth-child(1){
@@ -131,31 +136,46 @@ nav ul li a{
     color: #1c1c1c;
     font-weight: bold;
     box-sizing: border-box;
+    position: relative;
+}
+
+nav ul li a div{
+    height: 1px;
+    width: 0%;
+    position: absolute;
+    transition: width 200ms linear;
+    bottom: 0px;
 }
 
 nav ul li a:hover{
     color: #3fd0d4;
-    border-bottom:2px solid #3fd0d4 ;
+}
+
+nav ul li a:hover div{
+    background-color: #3fd0d4;
+    width: 100%;
 }
 
 
 nav .nav-end ul li{
     font-size: 20px;
-}
-
-nav .nav-end ul li{
     padding: 0px 8px;
 }
 
+nav .nav-end ul li:hover{
+    color: #3fd0d4;
+}
+
+
 main .slide{
     position: relative;
-    z-index: -1;
 }
 
 main .slide .slideShow{
    height: 450px;
    background-image: url('https://luumanhcuong.github.io/travel/assets/img/%E1%BA%A3nh%2012.jpg');
-   background-size: cover;
+   background-size: 150% 150%;
+   animation: slideScale 4000ms infinite linear;
 }
 
 .slide .slide-text{
@@ -165,17 +185,26 @@ main .slide .slideShow{
     color: white;
     text-align: center;
     font-size: 60px;
-    animation:slideText 1500ms 1 linear ;
+    animation:slideText 4000ms infinite linear ;
 }
 
 @keyframes slideText{
-    from{
+    0%{
         top: 150px;
         opacity: 0;
     }
-    to{
+    37%{
         top: 70px;
         opacity: 1;
+    }
+}
+
+@keyframes slideScale{
+    0%{
+        background-size: 150% 150%;
+    }
+    100%{
+        background-size: 155% 155%;
     }
 }
 
@@ -209,7 +238,7 @@ main .slide .slideShow{
 
 
 
-.slide .btn-next:hover,.slide .btn-prev:hover{
+.slide-btn .btn-next:hover,.slide-btn .btn-prev:hover{
     background-color: #3fd0d4;
     color: #fff;
 }
@@ -221,7 +250,7 @@ main .slide .slideShow{
 }
 
 .slide form{
-    width: 1100px;
+    width: 85%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -249,10 +278,13 @@ main .slide .slideShow{
 .slide form .form-group input,select{
     border: none;
     height: 100%;
-    font-weight: bold;
     flex: 8;
     outline: none;
     font-size: 14px;
+    color: #ccc;
+}
+
+.slide form .form-group input::placeholder{
     color: #ccc;
 }
 
